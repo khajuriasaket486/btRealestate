@@ -154,3 +154,9 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'khajuria.saket486@gmail.com'
 EMAIL_HOST_PASSWORD = 'Twinparadox500'
 EMAIL_USE_TLS = True
+
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
